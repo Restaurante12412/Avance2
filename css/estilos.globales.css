@@ -72,3 +72,18 @@ body {
     object-fit: cover;
     margin: 10px 0;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contenido {
+  animation: fadeInUp 0.4s ease forwards;
+}
