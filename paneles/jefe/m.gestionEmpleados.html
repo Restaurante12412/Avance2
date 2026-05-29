@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/estilos.globales.css">
+    <link rel="stylesheet" href="../../css/estilo.paneles.css">
+    <link rel="stylesheet" href="../../css/estilos.jefe.css">
+    <title>Panel del Jefe</title>
+</head>
+
+<body>
+
+    <div class="plateral">
+
+        <div>
+            <button class="Menu-Opciones" onclick="toggleMenu()">
+                ☰
+            </button>
+        </div>
+        <div class="Popciones">
+            <label for="opciones">OPCIONES</label>
+            <button class="btnG" onclick="irPanel('gestion-empleados')">Gestionar Empleados</button>
+            <button class="btnG" onclick="irPanel('ventas')">Reporte Ventas</button>
+            <button class="btnG" onclick="irPanel('gestion-menu')">Gestion Menu</button>
+            <button class="btnG" onclick="irPanel('salir')">Salir</button>
+        </div>
+    </div>
+
+    <div class="contenido">
+
+        <h3>Gestion de Personal</h3>
+        <h4>Opciones:</h4>
+        <button class="btnM">Agregar</button>
+        <button class="btnM">Editar</button>
+        <button class="btnM">Eliminar</button>
+        <h4>Empleados Actuales:</h4>
+        <div class="tabla-empleados">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Pedro</td>
+                        <td>Gomez</td>
+                        <td>30</td>
+                        <td>Jefe</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Juan</td>
+                        <td>Perez</td>
+                        <td>25</td>
+                        <td>Mesero</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Maria</td>
+                        <td>Lopez</td>
+                        <td>28</td>
+                        <td>Cocinera</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="../../js/Global.js"></script>
+</body>
+
+</html>

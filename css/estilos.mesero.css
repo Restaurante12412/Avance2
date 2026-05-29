@@ -1,0 +1,118 @@
+/* Reemplaza estos bloques en tu CSS */
+
+.cd-contenido {
+    width: 100%;
+}
+
+.cd-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.cd-detalle,
+.cd-pago {
+    background-color: var(--btn);
+    color: var(--Cfondo);
+    flex: 1;
+    min-width: 260px;
+    border-radius: 30px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.btnM {
+    font-size: 14px;
+    background-color: var(--co3);
+    color: var(--cu1);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btnM:hover {
+    background-color: var(--co2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    text-align: center;
+}
+
+table thead {
+    font-size: 18px;
+    background-color: var(--co3);
+    border-radius: 5px;
+    height: 30px;
+}
+
+
+
+.cd-contenido .cd-tabla,
+.cd-mesa {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+}
+
+
+
+.detalle-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.cd-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.cd-mesas {
+    flex: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .cd-contenido {
+        flex-direction: column;
+    }
+
+    .cd-mesas {
+        width: 100%;
+    }
+
+    .cd-menu {
+        flex-direction: column;
+    }
+
+    .cd-detalle {
+        margin-top: 20px;
+        width: 90%;
+        min-width: unset;
+
+    }
+
+    .detalle-info {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+}

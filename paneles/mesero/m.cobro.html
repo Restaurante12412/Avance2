@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/estilos.globales.css">
+    <link rel="stylesheet" href="../../css/estilo.paneles.css">
+    <link rel="stylesheet" href="../../css/estilos.mesero.css">
+
+    <title>Panel del Mesero</title>
+</head>
+
+<body>
+
+
+
+    <div class="plateral">
+        <button class="Menu-Opciones" onclick="toggleMenu()">
+            ☰
+        </button>
+        <div class="Popciones">
+            <label for="opciones">OPCIONES</label>
+            <button class="btnG" onclick="irPanel('crear-pedido')">Crear Pedido</button>
+            <button class="btnG" onclick="irPanel('menu')">Menu</button>
+            <button class="btnG" onclick="irPanel('cobro')">Cobro</button>
+            <button class="btnG" onclick="irPanel('salir')">Salir</button>
+        </div>
+    </div>
+    <div class="contenido">
+        <h3>= = = = = COBRO = = = = =</h3>
+
+        <div class="cd-contenido">
+
+            <!-- mesas con pedidos pendientes -->
+            <div class="cd-mesas">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Cliente</th>
+                            <th>Platillos</th>
+                            <th>Total</th>
+                            <th>Estado</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="seleccionada">
+                            <td>Mesa 2</td>
+                            <td>Ana García</td>
+                            <td>3</td>
+                            <td>s/35.00</td>
+                            <td><span class="estado estado-listo">Listo</span></td>
+                            <td><button class="btnM">Ver</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mesa 4</td>
+                            <td>Luis Torres</td>
+                            <td>5</td>
+                            <td>s/62.00</td>
+                            <td><span class="estado estado-listo">Listo</span></td>
+                            <td><button class="btnM">Ver</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mesa 1</td>
+                            <td>María Pérez</td>
+                            <td>2</td>
+                            <td>s/21.00</td>
+                            <td><span class="estado estado-pendiente">Pendiente</span></td>
+                            <td><button class="btnM">Ver</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mesa 6</td>
+                            <td>Carlos Ruiz</td>
+                            <td>4</td>
+                            <td>s/48.00</td>
+                            <td><span class="estado estado-pendiente">Pendiente</span></td>
+                            <td><button class="btnM">Ver</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mesa 3</td>
+                            <td>Rosa Mendoza</td>
+                            <td>6</td>
+                            <td>s/74.00</td>
+                            <td><span class="estado estado-listo">Listo</span></td>
+                            <td><button class="btnM">Ver</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- detalle del cobro (Mesa 2 seleccionada) -->
+            <div class="cd-detalle">
+                <h4>Detalle del Cobro</h4>
+
+                <div class="cd-mesa-info">
+                    <span><b>Mesa:</b> Mesa 2</span>
+                    <span><b>Cliente:</b> Ana García</span>
+                    <span><b>Mesero:</b> Carlos López</span>
+                </div>
+
+                <div class="cd-items">
+                    <div class="cd-item">
+                        <span class="cd-item-nombre">Ensalada César</span>
+                        <span class="cd-item-cant">x1</span>
+                        <span class="cd-item-precio">s/12.00</span>
+                    </div>
+                    <div class="cd-item">
+                        <span class="cd-item-nombre">Pasta al pesto</span>
+                        <span class="cd-item-cant">x1</span>
+                        <span class="cd-item-precio">s/10.00</span>
+                    </div>
+                    <div class="cd-item">
+                        <span class="cd-item-nombre">Jarra de maracuyá</span>
+                        <span class="cd-item-cant">x1</span>
+                        <span class="cd-item-precio">s/10.00</span>
+                    </div>
+                    <div class="cd-item">
+                        <span class="cd-item-nombre">Agua mineral</span>
+                        <span class="cd-item-cant">x1</span>
+                        <span class="cd-item-precio">s/5.00</span>
+                    </div>
+                </div>
+
+                <div class="cd-subtotales">
+                    <div class="linea"><span>Subtotal:</span><span>s/37.00</span></div>
+                    <div class="linea"><span>Descuento:</span><span>- s/2.00</span></div>
+                </div>
+
+                <div class="cd-total">
+                    <span>Total:</span>
+                    <span>s/35.00</span>
+                </div>
+
+                <div class="cd-pago">
+                    <label>Método de pago:</label>
+                    <select>
+                        <option selected>Efectivo</option>
+                        <option>Tarjeta</option>
+                        <option>Yape / Plin</option>
+                    </select>
+
+                    <label>Monto recibido:</label>
+                    <input type="number" value="50.00" />
+                </div>
+
+                <div class="cd-vuelto">Vuelto: s/15.00</div>
+
+                <div class="cd-btns">
+                    <button class="btnM">Confirmar Cobro</button>
+                    <button class="btnM">Cancelar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../../js/Global.js"></script>
+</body>
+
+</html>

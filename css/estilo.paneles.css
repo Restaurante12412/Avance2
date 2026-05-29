@@ -1,0 +1,90 @@
+/*no se pone display flex ya que en globals.css se define el display flex para el body */
+body {
+    flex-direction: row;
+}
+/*estilos persoanlizado del botón de opciones */
+.btnG {
+    width: 180px;
+    margin: 10px 0px;
+    height: 40px;
+}
+/*Contenido principal*/
+.contenido {
+    width: 100%;
+    background-color: transparent;
+    color: var(--cu1);
+    padding: 20px;
+}
+
+.contenido h3 {
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contenido h4 {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 0px 20px 0px;
+}
+/*Boton para el @media*/
+.Menu-Opciones {
+    display: none;
+}
+/*Panel lateral*/
+.plateral {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 200px;
+    background-color: var(--cu1);
+    color: var(--Cfondo);
+    padding: 20px;
+}
+/* Grupo de opciones */
+.Popciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Menu-Opciones {
+        display: flex;
+        width: 30px;
+        background-color: var(--cu1);
+        color: var(--Cfondo);
+    }
+
+    .plateral {
+        width: 30px;
+    }
+
+    .contenido h3,
+    .contenido h4 {
+        font-size: 20px;
+    }
+
+    .Popciones {
+        display: none;
+    }
+
+    .plateral.activo {
+        width: 180px;
+        display: flex;
+    }
+
+    .Popciones.activo {
+        display: flex;
+        width: 100%;
+        margin: 1px 1px 1px 1px;
+        border-radius: 5px;
+    }
+
+    .btnG {
+        display: block;
+        width: 100%;
+    }
+}

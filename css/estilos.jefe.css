@@ -1,0 +1,59 @@
+/*Como hay 2 tablas distintas lo dejamos como general sin especificar clase*/
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+table thead {
+    font-size: 18px;
+    background-color: var(--co3);
+    border-radius: 5px;
+    height: 30px;
+}
+
+.gestionar-empleados {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.tabla-ventas {
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+}
+
+.tabla-ventas tbody tr:hover {
+    background-color: var(--co2);
+}
+.contenido-tabla {
+    width: 100%;
+    height: 400px;
+
+}
+
+
+.tabla-ventas th,
+.tabla-ventas tr td {
+    HEIGHT: 30PX;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.btnM {
+    background-color: var(--co3);
+    color: var(--cu1);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnM:hover {
+    background-color: var(--co2);
+}

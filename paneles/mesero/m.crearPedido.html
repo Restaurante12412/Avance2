@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/estilos.globales.css">
+    <link rel="stylesheet" href="../../css/estilo.paneles.css">
+    <link rel="stylesheet" href="../../css/estilos.mesero.css">
+
+
+    <title>Panel del Mesero</title>
+</head>
+
+<body>
+
+
+
+    <div class="plateral">
+        <button class="Menu-Opciones" onclick="toggleMenu()">
+            ☰
+        </button>
+        <div class="Popciones">
+            <label for="opciones">OPCIONES</label>
+            <button class="btnG" onclick="irPanel('crear-pedido')">Crear Pedido</button>
+            <button class="btnG" onclick="irPanel('menu')">Menu</button>
+            <button class="btnG" onclick="irPanel('cobro')">Cobro</button>
+            <button class="btnG" onclick="irPanel('salir')">Salir</button>
+        </div>
+    </div>
+    <div class="contenido">
+        <h3>= = = = = Crear Pedido = = = = =</h3>
+        <div class="cd-contenido">
+            <div class="cd-menu">
+
+                <!-- Lista de platillos del menú -->
+                <div class="cd-menu">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Platillo</th>
+                                <th>Tipo</th>
+                                <th>Precio</th>
+                                <th>Agregar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bruschettas italianas</td>
+                                <td>Entrada</td>
+                                <td>s/10.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Ensalada César</td>
+                                <td>Entrada</td>
+                                <td>s/12.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Sopa de tomate</td>
+                                <td>Entrada</td>
+                                <td>s/8.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Fettuccine Alfredo</td>
+                                <td>Principal</td>
+                                <td>s/15.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Lasagna de carne</td>
+                                <td>Principal</td>
+                                <td>s/10.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Pasta al pesto</td>
+                                <td>Principal</td>
+                                <td>s/10.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Ravioles de ricotta</td>
+                                <td>Principal</td>
+                                <td>s/10.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Spaghetti a la boloñesa</td>
+                                <td>Principal</td>
+                                <td>s/10.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Agua mineral</td>
+                                <td>Bebida</td>
+                                <td>s/5.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Jarra de maracuyá</td>
+                                <td>Bebida</td>
+                                <td>s/10.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Coca Cola</td>
+                                <td>Bebida</td>
+                                <td>s/6.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                            <tr>
+                                <td>Jarrón de limonada</td>
+                                <td>Bebida</td>
+                                <td>s/10.00</td>
+                                <td><button class="btnM">+ Agregar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Detalle del pedido -->
+                <div class="cd-detalle">
+                    <h4>Detalle del Pedido</h4>
+
+                    <div class="detalle-info">
+                        <label>Mesa:</label>
+                        <select>
+                            <option>Mesa 1</option>
+                            <option>Mesa 2</option>
+                            <option>Mesa 3</option>
+                            <option>Mesa 4</option>
+                            <option selected>Mesa 5</option>
+                        </select>
+
+                        <label>Cliente:</label>
+                        <input type="text" value="Juan Pérez" />
+
+                        <label>Mesero:</label>
+                        <input type="text" value="Carlos López" readonly />
+                    </div>
+
+                    <!-- Items del pedido (datos imaginarios) -->
+                    <div class="cd-items">
+                        <div class="cd-item">
+                            <span class="item-nombre">Bruschettas italianas</span>
+                            <span class="item-cant">x1</span>
+                            <span class="item-precio">s/10.00</span>
+                        </div>
+                        <div class="cd-item">
+                            <span class="item-nombre">Fettuccine Alfredo</span>
+                            <span class="item-cant">x2</span>
+                            <span class="item-precio">s/30.00</span>
+                        </div>
+                        <div class="cd-item">
+                            <span class="item-nombre">Coca Cola</span>
+                            <span class="item-cant">x2</span>
+                            <span class="item-precio">s/12.00</span>
+                        </div>
+                        <div class="cd-item">
+                            <span class="item-nombre">Lasagna de carne</span>
+                            <span class="item-cant">x1</span>
+                            <span class="item-precio">s/10.00</span>
+                        </div>
+                    </div>
+
+                    <div class="total">Total: s/62.00</div>
+
+                    <div class="cd-detalle-btns">
+                        <button class="btnM">Confirmar Pedido</button>
+                        <button class="btnM">Limpiar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../../js/Global.js"></script>
+</body>
+
+</html>

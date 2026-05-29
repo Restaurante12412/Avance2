@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/estilos.globales.css">
+    <link rel="stylesheet" href="../../css/estilo.paneles.css">
+    <link rel="stylesheet" href="../../css/estilos.jefe.css">
+    <title>Panel del Jefe</title>
+</head>
+
+<body>
+
+    <div class="plateral">
+
+        <button class="Menu-Opciones" onclick="toggleMenu()">
+            ☰
+        </button>
+
+
+        <div class="Popciones">
+            <label for="opciones">OPCIONES</label>
+            <button class="btnG" onclick="irPanel('gestion-empleados')">Gestionar Empleados</button>
+            <button class="btnG" onclick="irPanel('ventas')">Reporte Ventas</button>
+            <button class="btnG" onclick="irPanel('gestion-menu')">Gestion Menu</button>
+            <button class="btnG" onclick="irPanel('salir')">Salir</button>
+        </div>
+    </div>
+    <div class="contenido">
+        <h3>= = = = = Gestionar Menú = = = = =</h3>
+        <h4>Opciones:</h4>   
+        <button class="btnM">Agregar</button>
+        <button class="btnM">Editar</button>
+        <button class="btnM">Eliminar</button>
+        <h4>------------ Entradas ------------</h4>
+        <div class="Orden">
+            <div class="Op-Menu">
+                <div class="N-OP_M">Bruschettas italianas</div>
+                <img src="../../assets/img/Entrada/Bruschettas italianas.avif" alt="Entrada 1">
+                <div class="P-OP_M">s/10.00</div>
+                <div class="D-OP_M">Deliciosas bruschettas italianas con tomate y albahaca.</div>
+            </div>
+            <div class="Op-Menu">
+                <div class="N-OP_M">Pan al ajo</div>
+                <img src="../../assets/img/Entrada/pan al ajo.avif" alt="Entrada 2">
+                <div class="P-OP_M">s/8.00</div>
+                <div class="D-OP_M">Delicioso pan al ajo con ajo y hierbas.</div>
+            </div>
+            <div class="Op-Menu">
+                <div class="N-OP_M">Ensalada caprese</div>
+                <img src="../../assets/img/Entrada/Ensalada caprese.avif" alt="Entrada 3">
+                <div class="P-OP_M">s/12.00</div>
+                <div class="D-OP_M">Deliciosas Ensalada caprese.</div>
+            </div>
+        </div>
+        <h4>------------ Principal ------------</h4>
+        <div class="Orden">
+            <div class="Op-Menu">
+                <div class="N-OP_M">Fettuccine Alfredo</div>
+                <img src="../../assets/img/Principal/Fettuccine Alfredo.avif" alt="Principal 1">
+                <div class="P-OP_M">s/15.00</div>
+                <div class="D-OP_M">Deliciosa fettuccine Alfredo con salsa cremosa.</div>
+            </div>
+            <div class="Op-Menu">
+                <div class="N-OP_M">Lasagna de carne</div>
+                <img src="../../assets/img/Principal/Lasagna de carne.PNG" alt="Principal 2">
+                <div class="P-OP_M">s/10.00</div>
+                <div class="D-OP_M">Deliciosas lasagna de carne con salsa y queso.</div>
+            </div>
+            <div class="Op-Menu">
+                <div class="N-OP_M">Pasta al pesto</div>
+                <img src="../../assets/img/Principal/Pasta al pesto.avif" alt="Principal 3">
+                <div class="P-OP_M">s/10.00</div>
+                <div class="D-OP_M">Deliciosas pasta al pesto con albahaca y pine nuts.</div>
+            </div>
+            <div class="Op-Menu">
+                <div class="N-OP_M">Ravioles de ricotta</div>
+                <img src="../../assets/img/Principal/Ravioles de ricotta.avif" alt="Principal 4">
+                <div class="P-OP_M">s/10.00</div>
+                <div class="D-OP_M">Deliciosos ravioles de ricotta con salsa y queso.</div>
+            </div>
+            <div class="Op-Menu">
+                <div class="N-OP_M">Spaghetti a la boloñesa</div>
+                <img src="../../assets/img/Principal/Spaghetti a la boloñesa.avif" alt="Principal 5">
+                <div class="P-OP_M">s/10.00</div>
+                <div class="D-OP_M">Deliciosos spaghetti a la boloñesa con salsa y queso.</div>
+            </div>
+        </div>
+        <h4>------------ Bebidas ------------</h4>
+        <div class="Orden">
+            <div class="Op-Menu">
+                <div class="N-OP_M">Agua mineral</div>
+                <img src="../../assets/img/Bebidas/agua mineral.jpg" alt="Bebida 1">
+                <div class="P-OP_M">s/15.00</div>
+                <div class="D-OP_M">Deliciosa agua mineral.</div>
+            </div>
+            <div class="Op-Menu">
+                <div class="N-OP_M">Jarra de maracuyá</div>
+                <img src="../../assets/img/Bebidas/maracuyá.jpg" alt="Bebida 2">
+                <div class="P-OP_M">s/10.00</div>
+                <div class="D-OP_M">Deliciosas jarra de maracuyá con frutas y hierbas.</div>
+            </div>
+            <div class="Op-Menu">
+                <div class="N-OP_M">Coca Cola</div>
+                <img src="../../assets/img/Bebidas/Coca Cola.PNG" alt="Bebida 3">
+                <div class="P-OP_M">s/10.00</div>
+                <div class="D-OP_M">Coca cola Personal</div>
+            </div>
+            <div class="Op-Menu">
+                <div class="N-OP_M">Jarrón de limonada</div>
+                <img src="../../assets/img/Bebidas/Limonada.avif" alt="Bebida 4">
+                <div class="P-OP_M">s/10.00</div>
+                <div class="D-OP_M">Deliciosas jarrones de limonada</div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/Global.js"></script>
+</body>
+
+</html>

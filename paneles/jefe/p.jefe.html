@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/estilos.globales.css">
+    <link rel="stylesheet" href="../../css/estilo.paneles.css">
+    <link rel="stylesheet" href="../../css/estilos.jefe.css">
+    <title>Panel del Jefe</title>
+</head>
+
+<body>
+
+    <div class="plateral">
+
+        <button class="Menu-Opciones" onclick="toggleMenu()">
+            ☰
+        </button>
+        <div class="Popciones">
+            <label for="opciones">
+                OPCIONES
+            </label>
+            <button class="btnG" onclick="irPanel('gestion-empleados')">Gestionar Empleados</button>
+            <button class="btnG" onclick="irPanel('ventas')">Reporte Ventas</button>
+            <button class="btnG" onclick="irPanel('gestion-menu')">Gestion Menu</button>
+            <button class="btnG" onclick="irPanel('salir')">Salir</button>
+        </div>
+    </div>
+    <div class="contenido">
+        <h3>Bienvenido al panel del Jefe</h3>
+        <p> Aqui podras gestionar las operaciones del sistema.</p>
+    </div>
+    <script src="../../js/Global.js"></script>
+</body>
+
+</html>

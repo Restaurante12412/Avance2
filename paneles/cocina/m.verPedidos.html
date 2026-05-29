@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/estilos.globales.css">
+    <link rel="stylesheet" href="../../css/estilo.paneles.css">
+    <link rel="stylesheet" href="../../css/estilos.cocina.css">
+    <title>Panel de la Cocina</title>
+</head>
+
+<body>
+
+    <button class="Menu-Opciones" onclick="toggleMenu()">
+        ☰
+    </button>
+    <div class="plateral">
+        <div class="Popciones">
+            <label for="opciones">OPCIONES</label>
+            <button class="btnG" onclick="irPanel('ver-pedidos')">Ver Pedidos</button>
+            <button class="btnG" onclick="irPanel('salir')">Salir</button>
+        </div>
+    </div>
+    <div class="contenido">
+
+        <h3>Ver Pedidos</h3>
+        <div class="tabla-empleados">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
+                        <th>Detalles</th>
+                        <th>Estado</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2023-10-01</td>
+                        <td>Producto A, Producto B</td>
+                        <td>Pendiente</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>2023-10-02</td>
+                        <td>Producto C, Producto D</td>
+                        <td>En Proceso</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>2023-10-03</td>
+                        <td>Producto E, Producto F</td>
+                        <td>Completado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../../js/Global.js"></script>
+</body>
+
+</html>

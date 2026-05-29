@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/estilos.globales.css">
+    <link rel="stylesheet" href="../../css/estilo.paneles.css">
+    <link rel="stylesheet" href="../../css/estilos.jefe.css">
+    <title>Panel del Jefe</title>
+</head>
+
+<body>
+
+
+    <div class="plateral">
+
+
+        <div>
+            <button class="Menu-Opciones" onclick="toggleMenu()">
+                ☰
+            </button>
+        </div>
+        <div class="Popciones">
+            <label for="opciones">OPCIONES</label>
+            <button class="btnG" onclick="irPanel('gestion-empleados')">Gestionar Empleados</button>
+            <button class="btnG" onclick="irPanel('ventas')">Reporte Ventas</button>
+            <button class="btnG" onclick="irPanel('gestion-menu')">Gestion Menu</button>
+            <button class="btnG" onclick="irPanel('salir')">Salir</button>
+        </div>
+    </div>
+    <div class="contenido">
+        <h3>= = = = = Reporte de Ventas = = = = =</h3>
+        <h4>Ventas recientes:</h4>
+        <div class="contenido-tabla">
+        <div class="tabla-ventas">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>costo</th>
+                        <th>Fecha</th>
+                        <th>Detalles</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>$50.00</td>
+                        <td>2023-10-01</td>
+                        <td>Producto A, Producto B</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>$75.00</td>
+                        <td>2023-10-02</td>
+                        <td>Producto C, Producto D</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>$100.00</td>
+                        <td>2023-10-03</td>
+                        <td>Producto E, Producto F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4>Diagrama de Ventas:</h4>
+    </div>
+    <script src="../../js/Global.js"></script>
+</body>
+
+</html>

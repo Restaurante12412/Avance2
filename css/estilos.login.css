@@ -1,0 +1,31 @@
+/* Estilos Login */
+body {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.CajaPrincipal {
+    width: 250px;
+    font-size: 20px;
+    background-color: var(--cu1);
+    color: var(--Cfondo);
+    padding: 40px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.SubCaja {
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+}
+
+.btnG {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    padding: 12px 25px;
+    font-size: 20px;
+}
