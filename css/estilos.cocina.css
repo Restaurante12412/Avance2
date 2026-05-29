@@ -1,0 +1,120 @@
+
+.cd-cocina {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 16px 16px 16px;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.cd-seccion {
+    flex: 1;
+    display: flex;
+    flex-direction: column; ;
+    gap: 10px;
+}
+
+/* Títulos de cada tabla */
+.titulo {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 0 0 8px 0;
+}
+
+.titulo.espera {
+    background-color: var(--co3);
+    color: var(--cu1);
+}
+
+.titulo.cocinando {
+    background-color: var(--btn);
+    color: var(--Cfondo);
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table thead {
+    background-color: var(--co3);
+    font-size: 15px;
+    height: 35px;
+}
+
+table thead tr {
+    background-color: var(--cu1);
+    color: var(--Cfondo);
+}
+
+table tbody tr:hover {
+    background-color: var(--co2);
+    cursor: default;
+}
+
+table th,
+table td {
+    padding: 10px 12px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+
+.lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+/* Botones de acción */
+.btnM {
+    background-color: var(--co3);
+    color: var(--cu1);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnM:hover {
+    color: var(--Cfondo);
+    background-color: var(--cu1);
+}
+
+
+/* ── Media query ── */
+@media screen and (max-width: 768px) {
+    .cd-cocina {
+        flex-direction: column;
+        padding: 0 10px 16px 10px;
+    }
+
+    .cd-seccion {
+        width: 100%;
+    }
+
+    table th,
+    table td {
+        padding: 8px 6px;
+        font-size: 12px;
+    }
+
+    .btnM {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
