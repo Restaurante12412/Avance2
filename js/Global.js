@@ -5,7 +5,7 @@ function irPanel(panel) {
     switch (panel) {
         //General
         case 'salir':
-            window.location.href = './index.html';
+            window.location.href = '/index.html';
             break;
         //Jefe
         case 'gestion-empleados':
