@@ -24,42 +24,112 @@
     </div>
     <div class="contenido">
 
-        <h3>Ver Pedidos</h3>
-        <div class="tabla-empleados">
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Fecha</th>
-                        <th>Detalles</th>
-                        <th>Estado</th>
-                    </tr>
+        <h3>= = = = = COCINA = = = = =</h3>
 
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>2023-10-01</td>
-                        <td>Producto A, Producto B</td>
-                        <td>Pendiente</td>
-                    </tr>
+        <div class="cd-cocina">
 
-                    <tr>
-                        <td>2</td>
-                        <td>2023-10-02</td>
-                        <td>Producto C, Producto D</td>
-                        <td>En Proceso</td>
-                    </tr>
+            <!-- TABLA 1: En espera -->
+            <div class="cd-seccion">
+                <h4 class="titulo espera"> En Espera</h4>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Mesero</th>
+                            <th>Platillos</th>
+                            <th>Hora</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mesa 1</td>
+                            <td>Carlos López</td>
+                            <td>
+                                <ul class="lista">
+                                    <li>x1 Bruschettas italianas</li>
+                                    <li>x2 Fettuccine Alfredo</li>
+                                    <li>x2 Coca Cola</li>
+                                </ul>
+                            </td>
+                            <td>12:05</td>
+                            <td><button class="btnM">Iniciar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mesa 6</td>
+                            <td>Ana Flores</td>
+                            <td>
+                                <ul class="lista">
+                                    <li>x1 Sopa de tomate</li>
+                                    <li>x1 Lasagna de carne</li>
+                                    <li>x1 Jarra de maracuyá</li>
+                                </ul>
+                            </td>
+                            <td>12:10</td>
+                            <td><button class="btnM">Iniciar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mesa 3</td>
+                            <td>Luis Ramos</td>
+                            <td>
+                                <ul class="lista">
+                                    <li>x2 Ensalada César</li>
+                                    <li>x2 Agua mineral</li>
+                                </ul>
+                            </td>
+                            <td>12:18</td>
+                            <td><button class="btnM">Iniciar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                    <tr>
-                        <td>3</td>
-                        <td>2023-10-03</td>
-                        <td>Producto E, Producto F</td>
-                        <td>Completado</td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- TABLA 2: Cocinando -->
+            <div class="cd-seccion">
+                <h4 class="titulo cocinando"> Cocinando</h4>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Mesero</th>
+                            <th>Platillos</th>
+                            <th>Hora</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mesa 2</td>
+                            <td>Carlos López</td>
+                            <td>
+                                <ul class="lista">
+                                    <li>x1 Pasta al pesto</li>
+                                    <li>x1 Ravioles de ricotta</li>
+                                    <li>x1 Jarrón de limonada</li>
+                                </ul>
+                            </td>
+                            <td>11:55</td>
+                            <td><button class="btnM">Listo</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mesa 4</td>
+                            <td>Ana Flores</td>
+                            <td>
+                                <ul class="lista">
+                                    <li>x2 Spaghetti a la boloñesa</li>
+                                    <li>x1 Ensalada César</li>
+                                    <li>x2 Agua mineral</li>
+                                </ul>
+                            </td>
+                            <td>12:00</td>
+                            <td><button class="btnM">Listo</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
+    </div>
     </div>
     <script src="../../js/Global.js"></script>
 </body>
